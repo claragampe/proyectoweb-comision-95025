@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-     <h1 class="color-header">OOGWAY MOTO STORE</h1>
-        <img src="../img/CACBFD4B-7860-4086-A156-8AFA99E4F8C6.PNG" width="200" height="200" alt="Ilustración de la cara de una tortuga con gafas y casco de motocilista">
+        <h1 class="color-header">OOGWAY MOTO STORE</h1>
+            <img src="../img/CACBFD4B-7860-4086-A156-8AFA99E4F8C6.PNG" width="200" height="200" alt="Ilustración de la cara de una tortuga con gafas y casco de motocilista">
         <nav>
             <ul class="color-header">
                 <li><a href="../index.html">Home</a></li>
@@ -24,18 +24,23 @@
         </nav>
     </header>
     <main>
-        <form action="">
+        <h2>CONTACTANOS</h2>
+        <form action="" class="form-contacto">
             <label for="">Nombre</label>
-            <input id="name" type="text">
+            <input id="name" type="text" name="name">
 
             <label for="email">Email</label>
-            <input type="text" id="mail">
+            <input type="text" id="mail" name="mail">
+        
+            <label for="">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" rows="6"></textarea>
 
-            <label for="">Seleccione su favorito</label>
-            <label for="Naked">Naked</label>
-            <input type="checkbox" name="" id="Naked">
-            <label for="Trail adventure">Trail adventure</label>
-            <input type="checkbox" name="" id="Trail adventure">
+            <label>Selecciona tu favorito</label>
+            <div class="checkbox-group">
+                <label for="naked"><input type="checkbox" id="naked" name="favorito">MAIL</label>
+                <label for="trail"><input type="checkbox" id="trail" name="favorito">WAPP</label>
+            </div>
+            <button type="submit" class="btn-producto">ENVIAR</button>
         </form>
     </main>
     <footer>

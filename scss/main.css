@@ -38,7 +38,7 @@ body, p {
   color: #5A6B4F;
 }
 
-.card-container .producto-card .info-producto .btn-producto {
+.form-contacto button, .card-container .producto-card .info-producto .btn-producto {
   display: inline-block;
   padding: 12px;
   border-radius: 80px;
@@ -166,6 +166,41 @@ main section a {
 main section img {
   display: block;
   margin: 16px auto;
+}
+
+.form-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+.form-contacto label {
+  color: #2F4A34;
+  font-weight: 600;
+}
+.form-contacto input[type=text],
+.form-contacto input[type=email],
+.form-contacto textarea {
+  padding: 8px;
+  border: 1px solid #C9D96A;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+}
+.form-contacto textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+.form-contacto .checkbox-group {
+  display: flex;
+  gap: 16px;
+  font-weight: 400;
+}
+.form-contacto button {
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
 }
 
 header {

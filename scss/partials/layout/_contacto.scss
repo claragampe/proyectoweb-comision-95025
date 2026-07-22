@@ -1,3 +1,43 @@
 @use "../utilities/variables";
 @use "../utilities/extend";
 
+.form-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: variables.$spacing-sm;
+    padding: variables.$spacing-lg;
+
+    label {
+        color: variables.$color-verde-oscuro;
+        font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: variables.$spacing-sm;
+        border: 1px solid variables.$color-verde-claro;
+        border-radius: 8px;
+        font-family: variables.$font-texto;
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 140px;
+    }
+
+    .checkbox-group {
+        display: flex;
+        gap: variables.$spacing-md;
+        font-weight: 400;
+    }
+
+    button {
+        @extend %button;
+        border: none;
+        cursor: pointer;
+        margin-top: variables.$spacing-sm;
+    }
+}
