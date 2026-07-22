@@ -40,14 +40,14 @@ body, p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  aligne-items: center;
+  align-items: center;
 }
 .card-container .card {
   padding: 16px;
   border: 1px solid #C9D96A;
   border-radius: 12px;
   width: 250px;
-  height: 280px;
+  min-height: 280px;
   background-color: #F5F0DC;
 }
 .card-container .card h4 {

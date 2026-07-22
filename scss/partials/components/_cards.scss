@@ -10,7 +10,7 @@
         border: 1px solid variables.$color-verde-claro;
         border-radius: 12px;
         width: 250px;
-        height: 280px;
+        min-height: 280px;   // antes: height: 280px;
         background-color: variables.$color-fondo;
 
         h4 {
