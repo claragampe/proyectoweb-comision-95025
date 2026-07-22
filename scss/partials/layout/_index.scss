@@ -20,6 +20,7 @@ header {
     section {
         flex: 1 1 60%;
         margin-bottom: 0;
+        text-align: center;
     }
 
     .foto-destacada {
@@ -63,7 +64,7 @@ main {
             color: variables.$color-verde-oscuro;
             font-weight: 600;
         }
-        
+
         img {
             display: block;
             margin: variables.$spacing-md auto;

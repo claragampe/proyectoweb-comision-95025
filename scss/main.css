@@ -83,6 +83,7 @@ header img {
 .fila-mercadolibre section {
   flex: 1 1 60%;
   margin-bottom: 0;
+  text-align: center;
 }
 .fila-mercadolibre .foto-destacada {
   flex: 1 1 35%;
