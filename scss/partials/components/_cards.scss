@@ -1,4 +1,6 @@
 @use "../utilities/mixin";
+@use "../utilities/extend";
+
 .card-container {
     @include mixin.flex(row, space-evenly, center);
     //display: flex;
@@ -18,5 +20,8 @@
         p{
             margin: 8px 0px;
         }
+        .btn-producto {
+        @extend %button;
+    }
     }
 }
