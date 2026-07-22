@@ -64,20 +64,87 @@ body, p {
 }
 header {
   background-color: #2F4A34;
-  padding: 16px 24px;
+  padding: 24px;
+  text-align: center;
 }
-header nav ul {
+header img {
+  border-radius: 50%;
+  margin: 8px 0;
+}
+
+main {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+main h2 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+main > p {
+  text-align: center;
+  margin-bottom: 24px;
+}
+main section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #C9D96A;
+}
+main section img {
+  border-radius: 8px;
+  margin: 8px 0;
+}
+main section a {
+  color: #2F4A34;
+  font-weight: 600;
+}
+
+header {
+  background-color: #2F4A34;
+  padding: 24px;
+  text-align: center;
+}
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #C9D96A;
+  margin: 8px 0;
+}
+
+nav ul {
   display: flex;
-  gap: 16px;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 16px;
 }
-header nav ul li a {
-  color: #C9D96A;
+nav ul li a {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #C9D96A;
+  color: #2F4A34;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+nav ul li a:hover {
+  background-color: #E4B93C;
 }
 
 footer {
   background-color: #2F4A34;
-  padding: 8px 24px;
+  padding: 16px 24px;
+  text-align: center;
 }
 footer p {
   color: #C9D96A;
+  margin-bottom: 8px;
+}
+footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
