@@ -1,0 +1,31 @@
+// BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+@use "./partials/components/cards";
+@use "./partials/components/tags";
+@use "./partials/components/buttons";
+
+// LAYOUT
+@use "./partials/layout/index";
+@use "./partials/layout/acercade";
+@use "./partials/layout/contacto";
+@use "./partials/layout/producto";
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    background-color: green;
+}
+
