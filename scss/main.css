@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F0DC;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+  color: #2F4A34;
+}
+
+body, p {
+  font-family: "Roboto", sans-serif;
+  color: #5A6B4F;
+}
+
+.card-container .card .btn-producto {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 80px;
+  text-decoration: none;
+  background-color: #E4B93C;
+  color: #2F4A34;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card-container .card {
+  padding: 16px;
+  border: 1px solid red;
+  border-radius: 8px;
+  width: 250px;
+  height: 250px;
+}
+.card-container .card h4 {
+  font-size: 1, 5rem;
+}
+.card-container .card p {
+  margin: 8px 0px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  background-color: green;
+}/*# sourceMappingURL=main.css.map */
