@@ -1,27 +1,35 @@
 @use "../utilities/mixin";
+@use "../utilities/variables";
 @use "../utilities/extend";
 
 .card-container {
     @include mixin.flex(row, space-evenly, center);
-    //display: flex;
-    //flex-direction: row;
-    //justify-content: space-between;
-    //align-items: center;
 
     .card {
-        padding: 16px;
-        border: 1px solid red;
-        border-radius: 8px;
+        padding: variables.$spacing-md;
+        border: 1px solid variables.$color-verde-claro;
+        border-radius: 12px;
         width: 250px;
-        height: 250px;
+        height: 280px;
+        background-color: variables.$color-fondo;
+
         h4 {
-            font-size: 1,5rem;
+            font-size: 1.2rem;
+            color: variables.$color-verde-oscuro;
         }
-        p{
-            margin: 8px 0px;
+
+        p {
+            margin: variables.$spacing-sm 0px;
+            color: variables.$color-musgo;
         }
+
+        h5 {
+            color: variables.$color-verde-oscuro;
+            font-weight: 600;
+        }
+
         .btn-producto {
-        @extend %button;
-    }
+            @extend %button;
+        }
     }
 }

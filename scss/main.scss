@@ -12,20 +12,10 @@
 @use "./partials/layout/contacto";
 @use "./partials/layout/producto";
 
+@use "./partials/components/header";
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
-h1{
-    margin: 1px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25vh;
-    background-color: green;
-}
+
 

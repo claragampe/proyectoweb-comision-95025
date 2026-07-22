@@ -40,31 +40,44 @@ body, p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  aligne-items: center;
 }
 .card-container .card {
   padding: 16px;
-  border: 1px solid red;
-  border-radius: 8px;
+  border: 1px solid #C9D96A;
+  border-radius: 12px;
   width: 250px;
-  height: 250px;
+  height: 280px;
+  background-color: #F5F0DC;
 }
 .card-container .card h4 {
-  font-size: 1, 5rem;
+  font-size: 1.2rem;
+  color: #2F4A34;
 }
 .card-container .card p {
   margin: 8px 0px;
+  color: #5A6B4F;
 }
-* {
-  margin: 0;
-  padding: 0;
+.card-container .card h5 {
+  color: #2F4A34;
+  font-weight: 600;
+}
+header {
+  background-color: #2F4A34;
+  padding: 16px 24px;
+}
+header nav ul {
+  display: flex;
+  gap: 16px;
+}
+header nav ul li a {
+  color: #C9D96A;
 }
 
-h1 {
-  margin: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25vh;
-  background-color: green;
+footer {
+  background-color: #2F4A34;
+  padding: 8px 24px;
+}
+footer p {
+  color: #C9D96A;
 }/*# sourceMappingURL=main.css.map */
