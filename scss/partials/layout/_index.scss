@@ -12,6 +12,26 @@ header {
     }
 }
 
+.fila-mercadolibre {
+    @include mixin.flex(row, flex-start, center);
+    gap: variables.$spacing-lg;
+    align-items: stretch;
+
+    section {
+        flex: 1 1 60%;
+        margin-bottom: 0;
+    }
+
+    .foto-destacada {
+        flex: 1 1 35%;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        align-self: stretch;
+    }
+}
+
 main {
     padding: variables.$spacing-lg;
     max-width: 900px;
@@ -42,6 +62,11 @@ main {
         a {
             color: variables.$color-verde-oscuro;
             font-weight: 600;
+        }
+        
+        img {
+            display: block;
+            margin: variables.$spacing-md auto;
         }
     }
 }
