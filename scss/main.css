@@ -38,7 +38,7 @@ body, p {
   color: #5A6B4F;
 }
 
-.card-container .card .btn-producto {
+.card-container .producto-card .info-producto .btn-producto {
   display: inline-block;
   padding: 12px;
   border-radius: 80px;
@@ -48,31 +48,60 @@ body, p {
 }
 
 .card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  aligne-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  width: 100%;
 }
-.card-container .card {
-  padding: 16px;
+.card-container .producto-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid #C9D96A;
   border-radius: 12px;
-  width: 250px;
-  min-height: 280px;
   background-color: #F5F0DC;
+  overflow: hidden;
 }
-.card-container .card h4 {
-  font-size: 1.2rem;
+.card-container .producto-card .foto-producto {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card-container .producto-card .info-producto {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-container .producto-card .info-producto h4 {
   color: #2F4A34;
+  font-size: 0.95rem;
 }
-.card-container .card p {
-  margin: 8px 0px;
+.card-container .producto-card .info-producto p {
   color: #5A6B4F;
+  font-size: 0.7rem;
+  margin: 8px 0px;
 }
-.card-container .card h5 {
+.card-container .producto-card .info-producto h5 {
   color: #2F4A34;
   font-weight: 600;
+  font-size: 0.85rem;
 }
+.card-container .producto-card .info-producto .btn-producto {
+  margin-top: 8px;
+  font-size: 0.8rem;
+}
+
+main.main-ancho {
+  max-width: 100%;
+  padding: 24px;
+}
+
 header {
   background-color: #2F4A34;
   padding: 24px;
@@ -87,7 +116,7 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  aligne-items: center;
+  align-items: center;
   gap: 24px;
   align-items: stretch;
 }

@@ -3,33 +3,63 @@
 @use "../utilities/extend";
 
 .card-container {
-    @include mixin.flex(row, space-evenly, center);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: variables.$spacing-sm;
+    width: 100%;
 
-    .card {
-        padding: variables.$spacing-md;
+    .producto-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         border: 1px solid variables.$color-verde-claro;
         border-radius: 12px;
-        width: 250px;
-        min-height: 280px;   // antes: height: 280px;
         background-color: variables.$color-fondo;
+        overflow: hidden;
 
-        h4 {
-            font-size: 1.2rem;
-            color: variables.$color-verde-oscuro;
+        .foto-producto {
+            grid-column: 2;
+            grid-row: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        p {
-            margin: variables.$spacing-sm 0px;
-            color: variables.$color-musgo;
-        }
+        .info-producto {
+            grid-column: 1;
+            grid-row: 1;
+            padding: variables.$spacing-sm;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-        h5 {
-            color: variables.$color-verde-oscuro;
-            font-weight: 600;
-        }
+            h4 {
+                color: variables.$color-verde-oscuro;
+                font-size: 0.95rem;
+            }
 
-        .btn-producto {
-            @extend %button;
+            p {
+                color: variables.$color-musgo;
+                font-size: 0.7rem;
+                margin: variables.$spacing-sm 0px;
+            }
+
+            h5 {
+                color: variables.$color-verde-oscuro;
+                font-weight: 600;
+                font-size: 0.85rem;
+            }
+
+            .btn-producto {
+                @extend %button;
+                margin-top: variables.$spacing-sm;
+                font-size: 0.8rem;
+            }
         }
     }
+}
+
+main.main-ancho {
+    max-width: 100%;
+    padding: variables.$spacing-lg;
 }
