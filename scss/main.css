@@ -6,6 +6,9 @@
 
 body {
   background-color: #F5F0DC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -15,6 +18,14 @@ a {
 
 li {
   list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+main {
+  flex: 1;
 }
 
 h1, h2, h3, h4, h5 {
