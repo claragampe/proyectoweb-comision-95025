@@ -1,0 +1,24 @@
+@use "../utilities/variables";
+
+header {
+    background-color: variables.$color-verde-oscuro;
+    padding: variables.$spacing-md variables.$spacing-lg;
+
+    nav ul {
+        display: flex;
+        gap: variables.$spacing-md;
+
+        li a {
+            color: variables.$color-verde-claro;
+        }
+    }
+}
+
+footer {
+    background-color: variables.$color-verde-oscuro;
+    padding: variables.$spacing-sm variables.$spacing-lg;
+
+    p {
+        color: variables.$color-verde-claro;
+    }
+}

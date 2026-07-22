@@ -1,0 +1,11 @@
+@use "../utilities/variables";
+
+h1, h2, h3, h4, h5 {
+    font-family: variables.$font-titulo;
+    color: variables.$color-verde-oscuro;
+}
+
+body, p {
+    font-family: variables.$font-texto;
+    color: variables.$color-musgo;
+}
